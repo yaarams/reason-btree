@@ -1,6 +1,7 @@
 {
   "name": "reason-btree",
   "version": "0.1.0",
+  "bsc-flags": ["-bs-g"],
   "sources": [
     {
       "dir": "src",
@@ -11,12 +12,10 @@
       "type": "dev"
     }
   ],
-  "entries": [
-    {
-      "backend": "js",
-      "main-module": "Tree"
-    }
-  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
   "bs-dependencies": [
     "@glennsl/bs-jest"
   ],
